@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amogh Jain - Highschool Detailer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #444;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+        }
+        .about, .gallery, .contact {
+            margin-bottom: 40px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form select, form button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        form button {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Amogh Jain - Highschool Detailer</h1>
+    </header>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm Amogh Jain, a high school student passionate about car detailing. I offer high-quality detailing services on weekends and weekdays. Please reach out if you have any questions or to book an appointment.</p>
+        <p><strong>Contact Info:</strong></p>
+        <p>Email: <a href="mailto:skillzjain7010@gmail.com">skillzjain7010@gmail.com</a></p>
+        <p>Phone: <a href="tel:4252197192">425-219-7192</a></p>
+    </section>
+    <section class="appointments">
+        <h2>Book an Appointment</h2>
+        <form action="mailto:skillzjain7010@gmail.com" method="POST" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="vehicle">Vehicle Name:</label>
+            <input type="text" id="vehicle" name="vehicle" required>
+            
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Preferred Time:</label>
+            <select id="time" name="time" required>
+                <option value="weekend_9am">Weekend - 9:00 AM</option>
+                <option value="weekend_11_30am">Weekend - 11:30 AM</option>
+                <option value="weekend_2pm">Weekend - 2:00 PM</option>
+                <option value="weekend_4_30pm">Weekend - 4:30 PM</option>
+                <option value="weekday_5pm">Weekday - 5:00 PM</option>
+            </select>
+            
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <p>Here are some before and after pictures of my previous clients' vehicles:</p>
+        <div class="images">
+            <img src="before1.jpg" alt="Before detailing - Client 1">
+            <img src="after1.jpg" alt="After detailing - Client 1">
+            <img src="before2.jpg" alt="Before detailing - Client 2">
+            <img src="after2.jpg" alt="After detailing - Client 2">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>For any inquiries, feel free to reach out via email or phone.</p>
+        <p>Email: <a href="mailto:skillzjain7010@gmail.com">skillzjain7010@gmail.com</a></p>
+        <p>Phone: <a href="tel:4252197192">425-219-7192</a></p>
+    </section>
+</body>
+</html>
+
+
