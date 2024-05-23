@@ -23,7 +23,7 @@
         section {
             padding: 20px;
         }
-        .about, .gallery, .contact {
+        .about, .appointments, .gallery, .contact, .prices {
             margin-bottom: 40px;
         }
         .gallery img {
@@ -49,6 +49,18 @@
         form button:hover {
             background-color: #777;
         }
+        .prices table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .prices th, .prices td {
+            border: 1px solid #777;
+            padding: 10px;
+            text-align: left;
+        }
+        .prices th {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
@@ -57,7 +69,7 @@
     </header>
     <section class="about">
         <h2>About Me</h2>
-        <p>Hi! I'm Amogh Jain, a high school student passionate about car detailing. I offer high-quality detailing services on weekends and weekdays. Please reach out if you have any questions or to book an appointment.</p>
+        <p>For almost four years I have been passionately detailing cars. When I began, I worked on strictly my parents cars always adding a new technique to my collection. Now I detail clients on a monthly basis who are pleased with my job. Please reach out if you have any questions or to book an appointment.</p>
         <p><strong>Contact Info:</strong></p>
         <p>Email: <a href="mailto:skillzjain7010@gmail.com">skillzjain7010@gmail.com</a></p>
         <p>Phone: <a href="tel:4252197192">425-219-7192</a></p>
@@ -103,6 +115,39 @@
             <!-- Add more images as needed -->
         </div>
     </section>
+    <section class="prices">
+        <h2>Prices</h2>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Small Car Exterior Detail</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>Big Car Exterior Detail</td>
+                <td>$75</td>
+            </tr>
+            <tr>
+                <td>Small Car Exterior and Interior Detail</td>
+                <td>$85</td>
+            </tr>
+            <tr>
+                <td>Big Car Exterior and Interior Detail</td>
+                <td>$105</td>
+            </tr>
+            <tr>
+                <td>Small Car Exterior and Interior Detail + Paint Correction</td>
+                <td>$110</td>
+            </tr>
+            <tr>
+                <td>Big Car Exterior and Interior Detail + Paint Correction</td>
+                <td>$125</td>
+            </tr>
+        </table>
+    </section>
     <section class="contact">
         <h2>Contact Me</h2>
         <p>For any inquiries, feel free to reach out via email or phone.</p>
@@ -111,5 +156,3 @@
     </section>
 </body>
 </html>
-
-
